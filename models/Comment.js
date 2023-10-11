@@ -7,7 +7,7 @@ Comment.init({
     createdAt: Datatypes.STRING,
 },{
     sequelize: db,
-    modelName: "User"
+    modelName: "Comment"
 });
 
 db.sync();

@@ -8,7 +8,7 @@ Post.init({
     createdAt: Datatypes.STRING,
 },{
     sequelize: db,
-    modelName: "User"
+    modelName: "Post"
 });
 
 db.sync();

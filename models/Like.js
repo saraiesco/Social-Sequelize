@@ -7,7 +7,7 @@ Like.init({
     createdAt: Datatypes.STRING,
 },{
     sequelize: db,
-    modelName: "User"
+    modelName: "Like"
 });
 
 db.sync();

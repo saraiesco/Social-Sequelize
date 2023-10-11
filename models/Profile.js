@@ -8,7 +8,7 @@ Profile.init({
     birthday: Datatypes.STRING,
 },{
     sequelize: db,
-    modelName: "User"
+    modelName: "Profile"
 });
 
 db.sync();

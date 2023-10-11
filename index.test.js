@@ -28,19 +28,19 @@ describe('Social Sequelzie Associations Test', () => {
 
     test("User has one Profile, vice versa", async () => {
         const user = await User.findByPk(1);
-        await user.addProfile(1);
+        await user.setProfile(1);
         const profile = await User.getProfile();
         console.log(JSON.stringify(user,null,2));
         // expect().toBe();
      });
 
-     test("User has many Post, Post has one User ", async () => {
-     });
+    //  test("User has many Post, Post has one User ", async () => {
+    //  });
 
-     test("Post has many Comment, Comment has one Post", async () => {
-     });
+    //  test("Post has many Comment, Comment has one Post", async () => {
+    //  });
 
-     test("User has many Like, Like has many User", async () => {
-     });
+    //  test("User has many Like, Like has many User", async () => {
+    //  });
 
 })

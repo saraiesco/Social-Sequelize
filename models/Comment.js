@@ -1,10 +1,10 @@
-const {db, Datatypes, Model} = require("../db/connection");
+const {db, DataTypes, Model} = require("../db/connection");
 
 class Comment extends Model {};
 
 Comment.init({
-    body: Datatypes.STRING,
-    createdAt: Datatypes.STRING,
+    body: DataTypes.STRING,
+    createdAt: DataTypes.STRING,
 },{
     sequelize: db,
     modelName: "Comment"

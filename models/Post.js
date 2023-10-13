@@ -1,11 +1,11 @@
-const {db, Datatypes, Model} = require("../db/connection");
+const {db, DataTypes, Model} = require("../db/connection");
 
 class Post extends Model {};
 
 Post.init({
-    title: Datatypes.STRING,
-    body: Datatypes.STRING,
-    createdAt: Datatypes.STRING,
+    title: DataTypes.STRING,
+    body: DataTypes.STRING,
+    createdAt: DataTypes.STRING,
 },{
     sequelize: db,
     modelName: "Post"

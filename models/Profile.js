@@ -1,11 +1,11 @@
-const {db, Datatypes, Model} = require("../db/connection");
+const {db, DataTypes, Model} = require("../db/connection");
 
 class Profile extends Model {};
 
 Profile.init({
-    bio: Datatypes.STRING,
-    profilePicture: Datatypes.STRING,
-    birthday: Datatypes.STRING,
+    bio: DataTypes.STRING,
+    profilePicture: DataTypes.STRING,
+    birthday: DataTypes.STRING,
 },{
     sequelize: db,
     modelName: "Profile"

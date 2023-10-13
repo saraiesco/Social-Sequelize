@@ -1,10 +1,10 @@
-const {db, Datatypes, Model} = require("../db/connection");
+const {db, DataTypes, Model} = require("../db/connection");
 
 class User extends Model {};
 
 User.init({
-    name: Datatypes.STRING,
-    email: Datatypes.STRING,
+    name: DataTypes.STRING,
+    email: DataTypes.STRING,
 },{
     sequelize: db,
     modelName: "User"
